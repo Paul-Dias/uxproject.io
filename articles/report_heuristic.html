@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Como esperamos que o sistema seja usado? • IncluiVagas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <button id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <a class="site-title" href="../index.html">IncluiVagas</a>
+        <label class="search-label" for="searchInput" aria-label="Search">
+            <input id="searchInput" type="search" placeholder="Search pages…" autocomplete="off" />
+        </label>
+    </header>
+
+    <div class="layout">
+        <aside id="sidebar" class="sidebar" aria-label="Site navigation">
+            <nav>
+                <h2>Navigation</h2>
+                <ul id="navList">
+                    <li><a href="../index.html" data-title="Home">Home</a></li>
+                    <li><a href="user-research.html" data-title="User Research">User Research</a></li>
+                    <li><a class="active" href="sistema-uso.html"
+                            data-title="Como esperamos que o sistema seja usado?">Como esperamos que o sistema seja
+                            usado?</a></li>
+                    <li><a href="prototipo.html" data-title="Protótipo de Baixa Fidelidade">Protótipo de Baixa
+                            Fidelidade</a></li>
+                    <li><a href="reflexao-metodos.html" data-title="Reflexão sobre o uso dos métodos">Reflexão sobre o
+                            uso dos métodos</a></li>
+                    <li><a href="../about.html" data-title="About">About</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="content" class="content" tabindex="-1">
+            <article class="article">
+                <header class="article-header">
+                    <h1>Como esperamos que o sistema seja usado?</h1>
+                </header>
+
+                <section class="article-body">
+                    <h2>Avaliação heurística</h2>
+
+                    <h3>1. Introdução</h3>
+                    <p>Este documento apresenta a avaliação de usabilidade do protótipo "IncluiVagas". O objetivo da
+                        análise é identificar pontos fortes e oportunidades de melhoria na interface antes da etapa de
+                        alta fidelidade, garantindo que a plataforma atenda aos requisitos de acessibilidade e
+                        usabilidade para o público-alvo (pessoas com deficiência).</p>
+
+                    <hr />
+
+                    <h3>2. Análise Detalhada por Heurística</h3>
+
+                    <section>
+                        <h4>1. Visibilidade do Status do Sistema</h4>
+                        <p><strong>Diagnóstico:</strong> O sistema fornece bom feedback visual sobre a localização do
+                            usuário.</p>
+                        <p><strong>Pontos Fortes:</strong></p>
+                        <ul>
+                            <li>Paginação clara na listagem de vagas.</li>
+                            <li>Status "Em Análise" visível na seção "Minhas Candidaturas".</li>
+                            <li>Indicação explícita dos filtros ativos no topo da busca.</li>
+                        </ul>
+                        <p><strong>Recomendação:</strong> Implementar feedback visual de progresso (barra de
+                            carregamento ou porcentagem) durante o upload de arquivos pesados (vídeos em Libras e
+                            Currículos), garantindo que o usuário saiba que o sistema está processando a informação.</p>
+                    </section>
+
+                    <section>
+                        <h4>2. Correspondência entre o Sistema e o Mundo Real</h4>
+                        <p><strong>Diagnóstico:</strong> A terminologia e os fluxos estão bem alinhados com o modelo
+                            mental do público-alvo.</p>
+                        <p><strong>Pontos Fortes:</strong></p>
+                        <ul>
+                            <li>Uso de termos naturais como "Ambiente Acessível", "Remoto" e "Libras".</li>
+                            <li>Possibilidade de "Currículo Multimodal" (Áudio/Vídeo), refletindo a diversidade de
+                                comunicação dos usuários reais.</li>
+                            <li>Ícones universais (câmera, microfone) facilitam a compreensão.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>3. Controle e Liberdade do Usuário</h4>
+                        <p><strong>Diagnóstico:</strong> O sistema oferece "saídas de emergência" adequadas.</p>
+                        <p><strong>Pontos Fortes:</strong></p>
+                        <ul>
+                            <li>Botão "Voltar ao Início" claramente posicionado.</li>
+                            <li>Opção "Limpar todos" nos filtros, permitindo desfazer ações em massa.</li>
+                            <li>Botões "Substituir" na área de upload, permitindo correção de erros sem frustração.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>4. Consistência e Padrões</h4>
+                        <p><strong>Diagnóstico:</strong> A identidade visual e o comportamento dos componentes são
+                            consistentes.</p>
+                        <p><strong>Pontos Fortes:</strong></p>
+                        <ul>
+                            <li>Layout estrutural padronizado (Cabeçalho &gt; Conteúdo &gt; Rodapé).</li>
+                            <li>Simbologia de acessibilidade utilizada de forma recorrente em diferentes telas.</li>
+                        </ul>
+                        <p><strong>Recomendação:</strong> Padronizar o alinhamento e peso visual dos botões de ação
+                            primária ("Salvar", "Aplicar", "Enviar") para garantir previsibilidade na interação.</p>
+                    </section>
+
+                    <section>
+                        <h4>5. Prevenção de Erros</h4>
+                        <p><strong>Diagnóstico:</strong> A interface restringe opções para evitar dados inválidos.</p>
+                        <p><strong>Pontos Fortes:</strong></p>
+                        <ul>
+                            <li>Uso de caixas de seleção (checkboxes) e listas suspensas (dropdowns) nos filtros,
+                                impedindo entradas incorretas.</li>
+                        </ul>
+                        <p><strong>Recomendação:</strong></p>
+                        <ul>
+                            <li>Adicionar máscaras de formatação automática nos campos de telefone e e-mail.</li>
+                            <li>Incluir uma mensagem de confirmação ("Deseja sair sem salvar?") caso o usuário tente
+                                abandonar a edição do perfil.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>6. Reconhecimento ao invés de Recuperação</h4>
+                        <p><strong>Diagnóstico:</strong> A interface minimiza a carga de memória do usuário.</p>
+                        <p><strong>Pontos Fortes:</strong></p>
+                        <ul>
+                            <li>Tags descritivas (ex: ícone de Libras, selo "Remoto") visíveis diretamente no card da
+                                vaga, eliminando a necessidade de clicar para verificar a acessibilidade básica.</li>
+                            <li>Filtros selecionados permanecem visíveis durante a navegação.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>7. Flexibilidade e Eficiência de Uso</h4>
+                        <p><strong>Diagnóstico:</strong> O sistema atende tanto usuários novatos quanto
+                            experientes/específicos.</p>
+                        <p><strong>Pontos Fortes:</strong></p>
+                        <ul>
+                            <li>"Filtros Rápidos" na Home funcionam como aceleradores eficazes.</li>
+                            <li>Multimodalidade no suporte (Chat, E-mail, Vídeo em Libras) permite que o usuário
+                                escolha o canal mais eficiente para sua deficiência específica.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>8. Estética e Design Minimalista</h4>
+                        <p><strong>Diagnóstico:</strong> A interface evita ruído visual desnecessário.</p>
+                        <p><strong>Pontos Fortes:</strong></p>
+                        <ul>
+                            <li>Cards de vagas contêm apenas informações essenciais para a tomada de decisão
+                                inicial.</li>
+                            <li>Espaçamento generoso entre elementos, favorecendo usuários com dificuldades motoras ou
+                                baixa visão.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>9. Reconhecimento, Diagnóstico e Recuperação de Erros</h4>
+                        <p><strong>Nota:</strong> Como se trata de um wireframe estático, não foi possível avaliar as
+                            mensagens de erro dinâmicas.</p>
+                        <p><strong>Diretriz para Alta Fidelidade:</strong> As mensagens de erro devem ser descritivas e
+                            acessíveis (não depender apenas da cor vermelha para indicar erro, usar ícones e texto
+                            claro).</p>
+                    </section>
+
+                    <section>
+                        <h4>10. Ajuda e Documentação</h4>
+                        <p><strong>Diagnóstico:</strong> Execução exemplar e inclusiva.</p>
+                        <p><strong>Pontos Fortes:</strong></p>
+                        <ul>
+                            <li>Integração nativa de vídeos em Libras nas FAQs.</li>
+                            <li>Tutoriais passo-a-passo em vídeo disponíveis para onboarding.</li>
+                            <li>Busca de ajuda em destaque.</li>
+                        </ul>
+                    </section>
+
+                    <h3>Relatório de Violações de Usabilidade (Indexado por Erros)</h3>
+
+                    <ol>
+                        <li>
+                            <h4>Erro: Dependência de <em>Placeholder</em> para instruir formato de dados</h4>
+                            <p><strong>Heurística Violada:</strong> #5 Prevenção de Erros e #6 Reconhecimento ao invés
+                                de
+                                Recuperação.</p>
+                            <p><strong>O Problema:</strong> Nos campos de formulário (especialmente "Telefone"), o
+                                exemplo de formatação <code>(11) 99999-9999</code> está dentro da caixa de texto
+                                (placeholder). Quando o usuário começa a digitar, essa dica desaparece. Isso obriga o
+                                usuário a memorizar o formato exigido (violando a heurística 6) e aumenta a chance de
+                                digitar errado (violando a heurística 5).</p>
+                            <p><strong>Print:</strong></p>
+                            <figure>
+                                <img alt="Print do placeholder do campo telefone"
+                                    src="data:image/png;base64,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" />
+                            </figure>
+                        </li>
+
+                        <li>
+                            <h4>Erro: Inconsistência Visual na Barra de Busca</h4>
+                            <p><strong>Heurística Violada:</strong> #4 Consistência e Padrões.</p>
+                            <p><strong>O Problema:</strong> O componente de "Busca" muda drasticamente de aparência e
+                                funcionamento dependendo da página. Na <em>Home</em>, ele é proeminente, dividido em
+                                duas
+                                linhas com um botão largo. Na página de <em>Ajuda</em>, ele é uma linha simples com
+                                botão
+                                quadrado lateral. Isso confunde o usuário, que precisa reaprender a identificar a
+                                ferramenta de busca.</p>
+                            <p><strong>Print</strong></p>
+                        </li>
+
+                        <li>
+                            <h4>Erro: Ausência de Botão "Cancelar" em Formulários</h4>
+                            <p><strong>Heurística Violada:</strong> #3 Controle e Liberdade do Usuário.</p>
+                            <p><strong>O Problema:</strong> Na tela de edição de perfil, existe apenas o botão "Salvar
+                                Alterações". Não há uma opção explícita de "Cancelar" ou "Descartar Mudanças" próxima a
+                                ele. Se o usuário editar algo por engano e quiser desistir, ele não tem uma "saída de
+                                emergência" clara naquele contexto, sendo forçado a navegar para outra página.</p>
+                            <p><strong>Print:</strong></p>
+                        </li>
+
+                        <li>
+                            <h4>Erro: Falta de Feedback de Progresso em Uploads Pesados</h4>
+                            <p><strong>Heurística Violada:</strong> #1 Visibilidade do Status do Sistema.</p>
+                            <p><strong>O Problema:</strong> A plataforma incentiva o envio de currículos em vídeo
+                                (Libras),
+                                que são arquivos pesados. No entanto, a interface mostra apenas um botão estático
+                                "Enviar". Não há indicação de uma barra de progresso ou spinner de carregamento. O
+                                usuário
+                                pode clicar e achar que nada aconteceu, gerando cliques repetidos ou frustração.</p>
+                            <p><strong>Print:</strong></p>
+                        </li>
+                    </ol>
+                </section>
+
+            </article>
+        </main>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
